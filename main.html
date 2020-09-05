@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web_laba1</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<script src="client.js"></script>
+<table class="main-table" align="center">
+    <th colspan="2">
+        <p title="It's me!" class="main-table">
+            Ilinskaya Olga Vadimovna, P3214, v. 2506
+        </p>
+    </th>
+    <tr>
+        <td>
+            <img src="images/graph.png" width="500" class="main-table">
+        </td>
+        <td>
+            <p class="main-table" id="enter-text">Enter values.</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <div class="main-table">
+                <p class="variable">X=<input type="radio" value="-2" checked name="radiobuttons">-2
+                    <input type="radio" value="-1.5" name="radiobuttons">-1.5
+                    <input type="radio" value="-1" name="radiobuttons">-1
+                    <input type="radio" value="-0.5" name="radiobuttons">-0.5
+                    <input type="radio" value="0" name="radiobuttons">0
+                    <input type="radio" value="0.5" name="radiobuttons">0.5
+                    <input type="radio" value="1" name="radiobuttons">1
+                    <input type="radio" value="1.5" name="radiobuttons">1.5
+                    <input type="radio" value="2" name="radiobuttons">2
+                    <br></p>
+                <p class="variable">Y=<input type="text" placeholder=" " id="y"><br></p>
+                <p class="variable">R=<select id="select" name="r-select">
+                    <option>1</option>
+                    <option>1.5</option>
+                    <option>2</option>
+                    <option>2.5</option>
+                    <option>3</option>
+                </select></p>
+                <button id="button" type="submit">✔️</button>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <table align="center" class="not-main-table">
+                <tr>
+                    <th class="variable">X</th>
+                    <th class="variable">Y</th>
+                    <th class="variable">R</th>
+                    <th>Result</th>
+                    <th>Time</th>
+                    <th>Script time</th>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
