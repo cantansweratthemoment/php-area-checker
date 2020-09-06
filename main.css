@@ -10,7 +10,7 @@ body {
     font-weight: bolder;
     font-size: 250%;
     text-decoration: underline overline;
-    color: #E8D7FF;
+    color: #A35CFF;
     background-color: #F3FFE1;
 }
 
@@ -21,7 +21,7 @@ body {
 #enter-text{
     text-align: left;/*каскадирование*/
     font-size: 200%;
-    color: #FFD7D5;
+    color: #A35CFF;
     background-color: #F3FFE1;
 }
 
@@ -30,7 +30,7 @@ TH.variable:after{/*селектор псевдоэлементов*/
 }
 
 div input{/*селектор потомков*/
-    color: #FFD7D5;
+    color: #FF47A0;
     border-width: thick;
     border-style: dotted;
     border-color: #FFD7D5;
@@ -45,7 +45,7 @@ div p{
     border-style: dotted;
     border-color: #E8D7FF;
     text-align: center;
-    color: #E8D7FF;
+    color: #A35CFF;
     font-style: normal;
 }
 #button {

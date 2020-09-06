@@ -19,7 +19,7 @@ function submit() {
         form.append("y", y);
         form.append("r", r);
         let request = new XMLHttpRequest();
-        request.open('POST', 'main.php');
+        request.open('POST', 'server.php');
         request.onreadystatechange = function () {
             if (request.readyState === 4 && request.status === 200) {
                 document.querySelector(".not-main-table").innerHTML = request.responseText;
