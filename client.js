@@ -16,7 +16,7 @@ function submit() {
         let rSelect = document.getElementById("select");
         let r = rSelect.value;
         let y = document.getElementById("y").value;
-        form.append("y", y);
+        form.append("y", y.replace(',', '.'));
         form.append("r", r);
         let request = new XMLHttpRequest();
         request.open('POST', 'server.php');
@@ -28,11 +28,12 @@ function submit() {
         request.send(form);
     }
 }
+
 document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("cleaningbutton").addEventListener("click", clean);
 });
 
-function clean(){
+function clean() {
     let cleaningform = new FormData();
     let cleaningrequest = new XMLHttpRequest();
     cleaningrequest.open('POST', 'clean.php');
@@ -49,7 +50,7 @@ function checkY() {
     if (y.value.trim() === "") {
         alert("Y не должен быть пустым!");
         return false;
-    } else if (!isFinite(y.value)) {
+    } else if (!isFinite(y.value.replace(',', '.'))) {
         alert("Y должен быть числом!");
     } else if (y.value >= 5 || y.value <= -5) {
         alert("Y должен быть в диапазоне (-5; 5)");
