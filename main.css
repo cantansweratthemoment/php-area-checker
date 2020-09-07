@@ -2,7 +2,7 @@ body {
     background-image: url(images/wallpaper.JPEG);
     background-size: 45%;
     background-repeat: repeat;
-    font-family: monospace;/*наследование (шрифт)*/
+    font-family: monospace; /*наследование (шрифт)*/
 }
 
 [title = "It's me!"] { /*селектор атрибутов*/
@@ -14,22 +14,22 @@ body {
     background-color: #F3FFE1;
 }
 
-.main-table {/*селектор классов*/
+.main-table { /*селектор классов*/
     text-align: center;
 }
 
-#enter-text{
-    text-align: left;/*каскадирование*/
+#enter-text {
+    text-align: left; /*каскадирование*/
     font-size: 200%;
     color: #A35CFF;
     background-color: #F3FFE1;
 }
 
-TH.variable:after{/*селектор псевдоэлементов*/
+TH.variable:after { /*селектор псевдоэлементов*/
     content: "🤠";
 }
 
-div input{/*селектор потомков*/
+div input { /*селектор потомков*/
     color: #FF47A0;
     border-width: thick;
     border-style: dotted;
@@ -37,9 +37,10 @@ div input{/*селектор потомков*/
     font-size: 100%;
 }
 
-div p{
+div p {
     font-size: 150%;
 }
+
 .not-main-table {
     font-size: 300%;
     border-style: dotted;
@@ -48,6 +49,7 @@ div p{
     color: #A35CFF;
     font-style: normal;
 }
+
 #button {
     color: black;
     text-align: center;
@@ -58,6 +60,11 @@ div p{
     cursor: pointer;
     border-radius: 30px;
 }
-#select{
+
+#select {
     font-size: 100%;
+}
+
+#time {
+    color: #FF47A0;
 }
