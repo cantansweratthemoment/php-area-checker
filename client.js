@@ -28,6 +28,21 @@ function submit() {
         request.send(form);
     }
 }
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("cleaningbutton").addEventListener("click", clean);
+});
+
+function clean(){
+    let cleaningform = new FormData();
+    let cleaningrequest = new XMLHttpRequest();
+    cleaningrequest.open('POST', 'clean.php');
+    cleaningrequest.onreadystatechange = function () {
+        if (cleaningrequest.readyState === 4 && cleaningrequest.status === 200) {
+            document.querySelector(".not-main-table").innerHTML = cleaningrequest.responseText;
+        }
+    }
+    cleaningrequest.send(cleaningform);
+}
 
 function checkY() {
     let y = document.getElementById("y");

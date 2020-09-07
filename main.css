@@ -61,6 +61,17 @@ div p {
     border-radius: 30px;
 }
 
+#cleaningbutton {
+    color: black;
+    text-align: center;
+    padding: 1% 2%;
+    margin: 2%;
+    background: white;
+    border: dotted #FFD7D5;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
 #select {
     font-size: 100%;
 }
