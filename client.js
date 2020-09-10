@@ -52,7 +52,7 @@ function checkY() {
         return false;
     } else if (!isFinite(y.value.replace(',', '.'))) {
         alert("Y должен быть числом!");
-    } else if (y.value >= 5 || y.value <= -5) {
+    } else if (y.value.replace(',', '.') >= 5 || y.value.replace(',', '.') <= -5) {
         alert("Y должен быть в диапазоне (-5; 5)");
         return false;
     } else {
